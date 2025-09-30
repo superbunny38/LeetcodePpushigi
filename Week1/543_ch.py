@@ -15,3 +15,4 @@ def depth(node):
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         return max(depth(root.left) + depth(root.right), self.diameterOfBinaryTree(root.left),self.diameterOfBinaryTree(root.right))
+    
